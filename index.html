@@ -3,12 +3,43 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lucas Pires Savassa</title>
+        <title>lucas pires savassa</title>
         <link rel="stylesheet" href="style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     </head>
-    <body>
-        <p>hello world</p>
+    <body class="d-flex flex-column gap-3 p-3">
+        <header class="d-flex gap-3">
+            <img src="./assets/profile.png" class="thumbnail" alt="a knight chess piece"/>
+            <section class="d-flex flex-column justify-content-center">
+                <h1>lucas pires savassa</h1>
+                <i class="p-1">authentic is unimpressive</i>
+            </section>
+        </header>
+        <main>
+            <nav>
+                <div id="nav-tab" class="nav nav-tabs" role="tablist">
+                    <button id="nav-home-tab" class="nav-link active" data-bs-toggle="tab" data-bs-target="#pane-home" type="button" role="tab" aria-selected="true">home</button>
+                    <button id="nav-chess-tab" class="nav-link" data-bs-toggle="tab" data-bs-target="#pane-chess" type="button" role="tab" aria-selected="false">chess</button>
+                    <button id="nav-articles-tab" class="nav-link" data-bs-toggle="tab" data-bs-target="#pane-articles" type="button" role="tab" aria-selected="false">articles</button>
+                    <button id="nav-projects-tab" class="nav-link" data-bs-toggle="tab" data-bs-target="#pane-projects" type="button" role="tab" aria-selected="false">projects</button>
+                </div>
+            </nav>
+            <div class="tab-content border rounded h-100">
+                <article id="pane-home" class="p-3 tab-pane fade show active" role="tabpanel" tabindex="0">
+                    "home"
+                </article>
+                <article id="pane-chess" class="p-3 tab-pane fade" role="tabpanel" tabindex="1">
+                    "chess"
+                </article>
+                <article id="pane-articles" class="p-3 tab-pane fade" role="tabpanel" tabindex="2">
+                    "articles"                    
+                </article>
+                <article id="pane-projects" class="p-3 tab-pane fade" role="tabpanel" tabindex="3">
+                    "projects"                    
+                </article>
+            </div>
+        </main>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
         <script src="script.js"></script>
     </body>
