@@ -19,23 +19,35 @@
             <nav>
                 <div id="nav-tab" class="nav nav-tabs" role="tablist">
                     <button id="nav-home-tab" class="nav-link active" data-bs-toggle="tab" data-bs-target="#pane-home" type="button" role="tab" aria-selected="true">home</button>
-                    <button id="nav-chess-tab" class="nav-link" data-bs-toggle="tab" data-bs-target="#pane-chess" type="button" role="tab" aria-selected="false">chess</button>
                     <button id="nav-articles-tab" class="nav-link" data-bs-toggle="tab" data-bs-target="#pane-articles" type="button" role="tab" aria-selected="false">articles</button>
                     <button id="nav-projects-tab" class="nav-link" data-bs-toggle="tab" data-bs-target="#pane-projects" type="button" role="tab" aria-selected="false">projects</button>
+                    <button id="nav-chess-tab" class="nav-link" data-bs-toggle="tab" data-bs-target="#pane-chess" type="button" role="tab" aria-selected="false">chess</button>
                 </div>
             </nav>
             <div class="notebook tab-content flex-fill">
-                <article id="pane-home" class="p-3 tab-pane fade show active" role="tabpanel" tabindex="0">
-                    "home"
+                <article id="pane-home" class="p-3 tab-pane show active" role="tabpanel" tabindex="0">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <section>
+                            <h3>description</h3>
+                            <p>this is both a blog and a resume.</p>
+                            <h3>summary</h3>
+                            <p>software developer with 8 years of experience building full-stack smart manufacturing solutions using .net c# and azure. acted as the lead developer of a four-month pilot mes implementation for a steel manufacturing line that expanded into a large-scale engagement. over the past 5 years, contributed to build a global mes platform across 53 manufacturing sites. key contributions include reducing latency and increasing throughput of a major data pipeline, establishing ci/cd pipelines in azure devops, providing l3 support, and, most recently, upgrading a large legacy system from .net framework to .net 8.</p>
+                            <h3>skills</h3>
+                            <p>.net c# | sql server | javascript | python | html | css | azure stream analytics | azure event hubs | git | mqtt | rabbitmq | powershell | bash | docker | kubernetes | codex</p>
+                        </section>
+                        <aside class="d-flex align-items-center justify-content-start justify-content-lg-center">
+                            <img src="./assets/modern-manufacturing-line.png"/>
+                        </aside>
+                    </div>
                 </article>
-                <article id="pane-chess" class="p-3 tab-pane fade" role="tabpanel" tabindex="1">
-                    "chess"
-                </article>
-                <article id="pane-articles" class="p-3 tab-pane fade" role="tabpanel" tabindex="2">
+                <article id="pane-articles" class="p-3 tab-pane" role="tabpanel" tabindex="2">
                     "articles"                    
                 </article>
-                <article id="pane-projects" class="p-3 tab-pane fade" role="tabpanel" tabindex="3">
+                <article id="pane-projects" class="p-3 tab-pane" role="tabpanel" tabindex="3">
                     "projects"                    
+                </article>
+                <article id="pane-chess" class="p-3 tab-pane" role="tabpanel" tabindex="1">
+                    "chess"
                 </article>
             </div>
         </main>
