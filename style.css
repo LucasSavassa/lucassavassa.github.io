@@ -5,30 +5,39 @@
     width: 100px;
 }
 
+.nav-tabs {
+    border-color: black;
+
+    .nav-link {
+        color: gray;
+    }
+
+    .nav-link:hover {
+        border-color: lightgray lightgray white lightgray;
+    }
+
+    .nav-link.active {
+        border-color: black black transparent black;
+    }
+}
+
+.tab-content {
+    width: calc(60ch + 2rem);
+}
+
 .notebook {
     border: 1px solid rgba(60, 120, 180, 0.25);
     border-top: initial;
     border-left: initial;
     background-color: #fffdf7;
     background-image:
-        linear-gradient(rgba(60, 120, 180, 0.15) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(60, 120, 180, 0.15) 1px, transparent 1px),
-        linear-gradient(rgba(60, 120, 180, 0.1) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(60, 120, 180, 0.1) 1px, transparent 1px);
+    linear-gradient(rgba(60, 120, 180, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(60, 120, 180, 0.15) 1px, transparent 1px),
+    linear-gradient(rgba(60, 120, 180, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(60, 120, 180, 0.1) 1px, transparent 1px);
     background-size:
-        100px 100px,
-        100px 100px,
-        20px 20px,
-        20px 20px;
-    
-    article {
-        section {
-            color: navy;
-            max-width: 60ch;
-        }
-
-        img {
-            width: clamp(400px, 75%, 60ch);
-        }
-    }
+    100px 100px,
+    100px 100px,
+    20px 20px,
+    20px 20px;
 }
